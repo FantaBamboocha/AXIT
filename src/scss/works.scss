@@ -1,0 +1,117 @@
+.works-content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+}
+
+.works-product {
+    padding: 0 0 90% 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.works-product--bg1 {
+    background: url(../assets/img/work_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg2 {
+    background: url(../assets/img/work_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg3 {
+    background: url(../assets/img/work_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg4 {
+    background: url(../assets/img/work_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg5 {
+    background: url(../assets/img/work_5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg6 {
+    background: url(../assets/img/work_6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg7 {
+    background: url(../assets/img/work_7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product--bg8 {
+    background: url(../assets/img/work_8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.works-product__block-hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 67, 67, 0.8);
+    border: 2px solid #FFFFFF;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.block-hover__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block-hover__link__title {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.block-hover__link__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.works-product:hover .works-product__block-hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.works-product__block-hover:active {
+    background: rgba(185, 12, 12, 0.8);
+    border: 2px solid #FFFFFF;
+    transition: 0.3s;
+}
