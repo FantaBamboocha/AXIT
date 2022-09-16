@@ -1,0 +1,131 @@
+@import "../mixin/background.scss";
+
+.works-content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+}
+
+@media (max-width: 768px) {
+    .works-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+
+.works-product {
+    padding: 0 0 90% 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.works-product--bg1 {
+    background: url(../../assets/img/work_1.png);
+    @include background;
+}
+
+.works-product--bg2 {
+    background: url(../../assets/img/work_2.png);
+    @include background;
+}
+
+.works-product--bg3 {
+    background: url(../../assets/img/work_3.png);
+    @include background;
+}
+
+.works-product--bg4 {
+    background: url(../../assets/img/work_4.png);
+    @include background;
+}
+
+.works-product--bg5 {
+    background: url(../../assets/img/work_5.png);
+    @include background;
+}
+
+.works-product--bg6 {
+    background: url(../../assets/img/work_6.png);
+    @include background;
+}
+
+.works-product--bg7 {
+    background: url(../../assets/img/work_7.png);
+    @include background;
+}
+
+.works-product--bg8 {
+    background: url(../../assets/img/work_8.png);
+    @include background;
+}
+
+.works-product__block-hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 67, 67, 0.8);
+    border: 2px solid #FFFFFF;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.block-hover__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+        margin: 0 0 20px 0;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        @media (max-width: 1200px) {
+            margin: 0 0 13px 0;
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 0 0 5px 0;
+            line-height: 25px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: capitalize;
+
+        @media (max-width: 1200px) {
+                font-size: 14px;
+                line-height: 16px;
+        }
+
+        @media (max-width: 768px) {
+                font-size: 14px;
+                line-height: 16px;
+        }
+    }
+}
+
+.works-product:hover .works-product__block-hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.works-product__block-hover:active {
+    background: rgba(185, 12, 12, 0.8);
+    border: 2px solid #FFFFFF;
+    transition: 0.3s;
+}
