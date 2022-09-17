@@ -1,0 +1,10 @@
+@mixin a_button {
+    margin: 0 auto;
+    width: 370px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #FF4343;
+    transition: 0.3s;
+}
