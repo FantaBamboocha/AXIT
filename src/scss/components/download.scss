@@ -1,4 +1,6 @@
 @import "../mixin/a_button.scss";
+@import "../mixin/button_hover.scss";
+@import "../mixin/button_active.scss";
 
 .download-content {
     padding: 114px 0;
@@ -69,6 +71,14 @@
 
         @media (max-width: 316px) {
             width: 200px;
+        }
+
+        &:hover {
+            @include button_hover;
+        }
+
+        &:active {
+            @include button_active;
         }
     }
 }
