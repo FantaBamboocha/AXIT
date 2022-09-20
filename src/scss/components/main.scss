@@ -45,13 +45,11 @@
 .header-logo {
     @media (max-width: 768px) {
         svg {
-            width: 102px;
-            height: 14px;
+            transform: scale(0.531);
+            margin-left: -42px;
         }
      } 
 }
-
-
 
 .navigation-list {
     display: flex;
